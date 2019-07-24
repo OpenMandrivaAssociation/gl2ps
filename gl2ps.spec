@@ -4,7 +4,7 @@
 
 Summary:	An OpenGL to PostScript printing library
 Name:		gl2ps
-Version:	1.3.9
+Version:	1.4.0
 Release:	1
 License:	LGPLv2+ or GL2PS
 Group:		System/Libraries
