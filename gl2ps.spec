@@ -87,7 +87,7 @@ develop programs using the GL2PS library.
 #--------------------------------------------------------------------
 
 %prep
-%autosetup -n %{name}-%{version}-source -p1
+%autosetup -p1
 
 %build
 %cmake
