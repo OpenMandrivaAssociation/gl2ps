@@ -4,7 +4,7 @@
 
 Summary:	An OpenGL to PostScript printing library
 Name:		gl2ps
-Version:	1.4.0
+Version:	1.4.2
 Release:	1
 License:	LGPLv2+ or GL2PS
 Group:		System/Libraries
@@ -87,18 +87,17 @@ develop programs using the GL2PS library.
 #--------------------------------------------------------------------
 
 %prep
-%setup -q -n %{name}-%{version}-source
+%autosetup -n %{name}-%{version}-source -p1
 
 %build
 %cmake
-%make
+%make_build
 
 %install
-%makeinstall_std -C build
+%make_install -C build
 
 # remove static lib
 rm -f %{buildroot}%{_libdir}/lib%{name}.a
 
 # remove unused docs
 rm -r %{buildroot}%{_docdir}/%{name}
-
