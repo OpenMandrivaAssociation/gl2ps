@@ -8,7 +8,7 @@ Version:	1.4.2
 Release:	2
 License:	LGPLv2+ or GL2PS
 Group:		System/Libraries
-URL:		http://www.geuz.org/%{name}/
+URL:		https://www.geuz.org/%{name}/
 Source0:	http://geuz.org/%{name}/src/%{name}-%{version}.tgz
 
 BuildRequires:	cmake
